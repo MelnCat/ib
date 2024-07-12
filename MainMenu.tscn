@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dh58umerr8be3"]
+
+[node name="MainMenu" type="MarginContainer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
