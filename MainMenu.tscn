@@ -1,6 +1,82 @@
-[gd_scene format=3 uid="uid://dh58umerr8be3"]
+[gd_scene load_steps=5 format=3 uid="uid://dh58umerr8be3"]
+
+[ext_resource type="Texture2D" uid="uid://gg8cmxuicvpd" path="res://img/titlebg.png" id="1_ljff4"]
+[ext_resource type="Theme" uid="uid://d1x1x2j3rnp22" path="res://MainTheme.tres" id="1_tnql4"]
+[ext_resource type="Texture2D" uid="uid://ckuyu1j1eu6hr" path="res://img/buttonbg.png" id="3_o73xn"]
+[ext_resource type="VideoStream" path="res://img_hidden/mainmenubg.ogv" id="4_71jml"]
 
 [node name="MainMenu" type="MarginContainer"]
 
+[node name="TextureRect4" type="TextureRect" parent="."]
+layout_mode = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="TextureRect4"]
+layout_mode = 2
+offset_left = -378.0
+offset_top = -228.0
+offset_right = 1542.0
+offset_bottom = 860.0
+stream = ExtResource("4_71jml")
+autoplay = true
+loop = true
+
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="TextureRect"]
+position = Vector2(587, 89)
+scale = Vector2(1.10526, 0.861143)
+texture = ExtResource("1_ljff4")
+
+[node name="Label" type="Label" parent="TextureRect"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 28.0
+offset_right = 937.0
+offset_bottom = 267.0
+theme = ExtResource("1_tnql4")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_font_sizes/font_size = 84
+text = "IBDP
+The Game"
+horizontal_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 2
+
+[node name="Buttonbg" type="Sprite2D" parent="TextureRect2"]
+position = Vector2(596, 346)
+scale = Vector2(0.659999, 0.445643)
+texture = ExtResource("3_o73xn")
+
+[node name="Label" type="Label" parent="TextureRect2"]
+offset_left = 483.0
+offset_top = 311.0
+offset_right = 710.0
+offset_bottom = 410.0
+theme = ExtResource("1_tnql4")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Start"
+horizontal_alignment = 1
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 2
+
+[node name="Buttonbg" type="Sprite2D" parent="TextureRect3"]
+position = Vector2(594, 500)
+scale = Vector2(0.744238, 0.462948)
+texture = ExtResource("3_o73xn")
+
+[node name="Label" type="Label" parent="TextureRect3"]
+offset_left = 452.0
+offset_top = 465.0
+offset_right = 757.0
+offset_bottom = 564.0
+theme = ExtResource("1_tnql4")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 64
+text = "Settings"
+horizontal_alignment = 1
