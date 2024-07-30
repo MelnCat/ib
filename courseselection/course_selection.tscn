@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cykm3dep3xs3b"]
+
+[node name="CourseSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 0
